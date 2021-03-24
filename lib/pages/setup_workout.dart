@@ -201,9 +201,9 @@ class _SetupWorkoutState extends State<SetupWorkout> {
                   Text(
                     'Create the Workout that fits you!',
                     style: TextStyle(
-                      fontSize: 18.0,
+                      fontSize: 19.0,
                       fontWeight: FontWeight.bold,
-                      color: Colors.greenAccent[700],
+                      color: Colors.tealAccent[700],
                     ),
                   ),
                   SizedBox(height: 15.0),
@@ -233,6 +233,10 @@ class _SetupWorkoutState extends State<SetupWorkout> {
               SizedBox(height: 40.0),
               ElevatedButton(
                 //padding: EdgeInsets.all(15.0),
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.teal,
+                  elevation: 5,
+                ),
                 onPressed: () {
                   if(!_formKeyValue.currentState.validate()){
                     // if the validation is not right
@@ -265,7 +269,6 @@ class _SetupWorkoutState extends State<SetupWorkout> {
                     });
                     }
                   }
-                  
                 },
                 //color: Colors.greenAccent,
                 child: Text(

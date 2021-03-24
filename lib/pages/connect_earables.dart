@@ -149,6 +149,8 @@ class _ConnectEarablesState extends State<ConnectEarables> {
     super.dispose();
   }
 
+  
+
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
